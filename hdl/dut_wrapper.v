@@ -11,4 +11,9 @@ module dut_wrapper(
         .y(y)
     );
 
+    initial begin
+        $dumpfile("waveform.vcd");  
+        $dumpvars(0, dut_wrapper);   
+    end
+
 endmodule
